@@ -1,0 +1,15 @@
+app:
+  name: poi-gateway-app
+  namespace: cedricclyburn
+  cluster: .apps.summit23bis.17gd.p1.openshiftapps.com
+
+git:
+  branch: main
+  repo: https://github.com/Summit23JanusN/cedricclyburn-gateway
+  org: Summit23JanusN
+  name: cedricclyburn-gateway
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: cedricclyburn/poi-gateway-app
+  tag: latest
